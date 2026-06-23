@@ -1,11 +1,11 @@
 import React, { createContext, useContext, useState, useEffect } from "react";
 
 export interface User {
-  username: str;
-  email: str;
-  full_name: str;
-  role: str;
-  created_at?: str;
+  username: string;
+email: string;
+full_name: string;
+role: string;
+created_at?: string;
   settings?: {
     darkMode: boolean;
     notificationsEnabled: boolean;
@@ -23,7 +23,7 @@ interface AuthContextType {
 
 const AuthContext = createContext<AuthContextType | undefined>(undefined);
 
-export const API_BASE_URL = "http://localhost:8000";
+export const API_BASE_URL = "https://financial-news-entity-extraction-1.onrender.com";
 
 export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const [user, setUser] = useState<User | null>(null);

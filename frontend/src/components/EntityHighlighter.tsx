@@ -50,8 +50,14 @@ export const EntityHighlighter: React.FC<EntityHighlighterProps> = ({ tokens }) 
   };
 
   // Group consecutive tokens belonging to the same entity
-  const groups: { text: string; type: string | null; confidence: number }[] = [];
-  let currentGroup: { tokens: string[]; type: string; confs: number[] } | null = null;
+  type EntityGroup = {
+  tokens: string[];
+  type: string;
+  confs: number[];
+};
+
+const groups: { text: string; type: string | null; confidence: number }[] = [];
+let currentGroup: EntityGroup | null = null;
 
   tokens.forEach((t) => {
     if (t.label === "O") {
@@ -59,7 +65,11 @@ export const EntityHighlighter: React.FC<EntityHighlighterProps> = ({ tokens }) 
         groups.push({
           text: currentGroup.tokens.join(" "),
           type: currentGroup.type,
-          confidence: currentGroup.confs.reduce((a, b) => a + b, 0) / currentGroup.confs.length
+          confidence:
+  currentGroup.confs.reduce(
+    (a: number, b: number) => a + b,
+    0
+  ) / currentGroup.confs.length
         });
         currentGroup = null;
       }
@@ -67,7 +77,7 @@ export const EntityHighlighter: React.FC<EntityHighlighterProps> = ({ tokens }) 
     } else {
       const parts = t.label.split("-");
       const isBegin = parts[0] === "B";
-      const entType = parts[1];
+      const entType: string = parts[1] || "";
 
       if (isBegin) {
         if (currentGroup) {
@@ -98,13 +108,19 @@ export const EntityHighlighter: React.FC<EntityHighlighterProps> = ({ tokens }) 
     }
   });
 
-  if (currentGroup) {
-    groups.push({
-      text: currentGroup.tokens.join(" "),
-      type: currentGroup.type,
-      confidence: currentGroup.confs.reduce((a, b) => a + b, 0) / currentGroup.confs.length
-    });
-  }
+  const finalGroup = currentGroup as EntityGroup | null;
+
+if (finalGroup) {
+  groups.push({
+    text: finalGroup.tokens.join(" "),
+    type: finalGroup.type,
+    confidence:
+      finalGroup.confs.reduce(
+        (a: number, b: number) => a + b,
+        0
+      ) / finalGroup.confs.length,
+  });
+}
 
   // Render reconstruction
   return (
