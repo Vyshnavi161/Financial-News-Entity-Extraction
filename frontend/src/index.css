@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-darkBg text-slate-200 font-sans antialiased overflow-x-hidden transition-colors duration-300;
+  }
+}
+
+/* Glassmorphism Panels */
+.glass-panel {
+  background: rgba(13, 20, 38, 0.6);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.glass-panel-light {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.glass-panel-hover {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.glass-panel-hover:hover {
+  background: rgba(18, 28, 54, 0.75);
+  border-color: rgba(0, 240, 255, 0.3);
+  box-shadow: 0 0 25px rgba(0, 240, 255, 0.15);
+  transform: translateY(-2px);
+}
+
+/* Custom Scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #060913;
+}
+
+.dark ::-webkit-scrollbar-track {
+  background: #060913;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #334155;
+}
+
+/* Shimmer loader effect */
+.shimmer {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.03) 25%,
+    rgba(255, 255, 255, 0.09) 50%,
+    rgba(255, 255, 255, 0.03) 75%
+  );
+  background-size: 200% 100%;
+  animation: shimmer-load 1.6s infinite;
+}
+
+@keyframes shimmer-load {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+
+/* Animations */
+@keyframes pulseGlow {
+  0%, 100% { opacity: 0.2; }
+  50% { opacity: 0.45; }
+}
+
+.animate-pulse-glow {
+  animation: pulseGlow 8s ease-in-out infinite;
+}
+
+@keyframes gridScroll {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(40px); }
+}
+
+.animate-grid-scroll {
+  animation: gridScroll 20s linear infinite;
+}
+
+/* Text glow utilities */
+.text-glow-blue {
+  text-shadow: 0 0 10px rgba(0, 240, 255, 0.5);
+}
+
+.text-glow-purple {
+  text-shadow: 0 0 10px rgba(168, 85, 247, 0.5);
+}
+
+/* Highlight Colors for entity tokens */
+.entity-tag-org {
+  background-color: rgba(59, 130, 246, 0.2);
+  border-bottom: 2px solid rgb(59, 130, 246);
+}
+.entity-tag-ticker {
+  background-color: rgba(239, 68, 68, 0.2);
+  border-bottom: 2px solid rgb(239, 68, 68);
+}
+.entity-tag-money {
+  background-color: rgba(16, 185, 129, 0.2);
+  border-bottom: 2px solid rgb(16, 185, 129);
+}
+.entity-tag-event {
+  background-color: rgba(249, 115, 22, 0.2);
+  border-bottom: 2px solid rgb(249, 115, 22);
+}
+.entity-tag-date {
+  background-color: rgba(168, 85, 247, 0.2);
+  border-bottom: 2px solid rgb(168, 85, 247);
+}

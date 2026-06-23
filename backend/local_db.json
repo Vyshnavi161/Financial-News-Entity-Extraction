@@ -1,0 +1,1464 @@
+{
+  "users": [
+    {
+      "username": "testuser",
+      "email": "test@gmail.com",
+      "full_name": "Test User",
+      "password_hash": "$2b$12$ntm1T4fhU5NE/9sb7rC2muxAUJMvEfHhUvY72f0/BUlOOLlkwFVoG",
+      "role": "admin",
+      "created_at": "2026-06-23T06:32:24.614070Z",
+      "settings": {
+        "darkMode": true,
+        "notificationsEnabled": true
+      },
+      "_id": "61eedc3a-4bf1-41ac-acd9-7eb234740b7b"
+    },
+    {
+      "username": "vyshnavi",
+      "email": "vyshnavi@gmail.com",
+      "full_name": "vyshnavi Moka",
+      "password_hash": "$2b$12$.E5W7MGjBYNhtX9VUx/FCO0wKoOgBxuh2V1ulgH44d7QCEZMHLFly",
+      "role": "user",
+      "created_at": "2026-06-23T06:41:05.698879Z",
+      "settings": {
+        "darkMode": true,
+        "notificationsEnabled": true
+      },
+      "_id": "b2f91b34-783f-49e2-b6be-06d7345d8eb7"
+    }
+  ],
+  "files": [
+    {
+      "user_id": "vyshnavi",
+      "filename": "skilhub frontend and backend process.docx (1).pdf",
+      "size": 314097,
+      "content_type": "application/pdf",
+      "status": "processed",
+      "created_at": "2026-06-23T06:41:57.004858Z",
+      "_id": "efff8bcb-058f-414a-a21d-12c5f4cce634"
+    }
+  ],
+  "history": [
+    {
+      "user_id": "vyshnavi",
+      "source_type": "document",
+      "file_id": "efff8bcb-058f-414a-a21d-12c5f4cce634",
+      "filename": "skilhub frontend and backend process.docx (1).pdf",
+      "text": "New skillhub project(MERN Stack)\nSkill Hub Documentation and Folder Architecture:\n\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026..\nskillhub-project\n\u2502\n\u251c\u2500\u2500 frontend\n\u2502 \u251c\u2500\u2500 src\n\u2502 \u2502 \u251c\u2500\u2500 api\n\u2502 \u2502 \u2502 \u2514\u2500\u2500 courseApi.js\n\u2502 \u2502 \u2502\n\u2502 \u2502 \u251c\u2500\u2500 components\n\u2502 \u2502 \u2502 \u251c\u2500\u2500 Navbar.jsx\n\u2502 \u2502 \u2502 \u251c\u2500\u2500 Sidebar.jsx\n\u2502 \u2502 \u2502 \u251c\u2500\u2500 Hero.jsx\n\u2502 \u2502 \u2502 \u251c\u2500\u2500 Footer.jsx\n\u2502 \u2502 \u2502 \u251c\u2500\u2500 CourseCard.jsx\n\u2502 \u2502 \u2502 \u2514\u2500\u2500 ThemeContext.jsx\n\u2502 \u2502 \u2502\n\u2502 \u2502 \u251c\u2500\u2500 pages\n\u2502 \u2502 \u2502 \u251c\u2500\u2500 Home.jsx\n\u2502 \u2502 \u2502 \u251c\u2500\u2500 Courses.jsx\n\u2502 \u2502 \u2502 \u251c\u2500\u2500 Contact.jsx\n\u2502 \u2502 \u2502 \u2514\u2500\u2500 AddCourse.jsx\n\u2502 \u2502 \u2502\n\u2502 \u2502 \u251c\u2500\u2500 App.jsx\n\u2502 \u2502 \u251c\u2500\u2500 main.jsx\n\u2502 \u2502 \u2514\u2500\u2500 index.css\n\u2502 \u2502\n\u2502 \u2514\u2500\u2500 package.json\n\u2502\n\u2514\u2500\u2500 backend\n\u2502\n\u251c\u2500\u2500 config\n\u2502 \u2514\u2500\u2500 db.js\n\u2502\n\u251c\u2500\u2500 controllers\n\u2502 \u251c\u2500\u2500 courseController.js\n\u2502 \u2514\u2500\u2500 contactController.js\n\u2502\n\u251c\u2500\u2500 models\n\u2502 \u251c\u2500\u2500 Course.js\n\u2502 \u2514\u2500\u2500 Contact.js\n\u2502\n\u251c\u2500\u2500 routes\n\u2502 \u251c\u2500\u2500 courseRoutes.js\n\u2502 \u2514\u2500\u2500 contactRoutes.js\n\u2502\n\u251c\u2500\u2500 .env\n\u251c\u2500\u2500 server.js\n\u2514\u2500\u2500 package.json\n\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026.\nskillhub-project > npm create vite@latest frontend\nselect- React -> javascript+reactjs compiler\nskillhub-project> cd frontend\nskillhub-project\\ frontend>\nnode_modules must be inside the frontend folder. Ensure this.\nExample: npm install react-router-dom react-toastify react-icons framer-motion axios\nAfter installation, we will have in package.json as\n\u201cinstall all dependencies like \u201c \"axios\": \"^1.18.0\",\n\"framer-motion\": \"^12.40.0\",\n\"react\": \"^19.2.6\",\n\"react-dom\": \"^19.2.6\",\n\"react-icons\": \"^5.6.0\",\n\"react-router-dom\": \"^7.18.0\",\n\"react-toastify\": \"^11.1.0\"\n\u201d\n\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026.\nInside src->\nCreate \u2013 api ,components,pages folders as seen in folder architecture\n\u251c\u2500\u2500 api\n\u2514\u2500\u2500 courseApi.js\ncourseApi.jsx\nimport axios from \"axios\";\nconst API = axios.create({\nbaseURL: \"http://localhost:5000/api\"\n});\nexport default API;\n\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026..\n\u251c\u2500\u2500 components\n\u251c\u2500\u2500 Navbar.jsx\n\u251c\u2500\u2500 Sidebar.jsx\n\u251c\u2500\u2500 Hero.jsx\n\u251c\u2500\u2500 Footer.jsx\n\u251c\u2500\u2500 CourseCard.jsx\n\u2514\u2500\u2500 ThemeContext.jsx\nNavbar.jsx\nimport { useState, useContext } from \"react\";\nimport { Link } from \"react-router-dom\";\nimport { ThemeContext } from \"./ThemeContext\";\nimport { FaMoon, FaSun } from \"react-icons/fa\";\nfunction Navbar() {\nconst [open, setOpen] = useState(false);\nconst { dark, setDark } =\nuseContext(ThemeContext);\nreturn (\n<nav>\n<h2>SkillHub</h2>\n<ul>\n<li>\n<Link to=\"/\">\nHome\n</Link>\n</li>\n<li\nonClick={() => setOpen(!open)}\nclassName=\"menu-item\"\n>\nCourses \u25bc\n{\nopen && (\n<div className=\"dropdown\">\n<Link to=\"/courses\">\nAll Courses\n</Link>\n<Link to=\"/add-course\">\nAdd Course\n</Link>\n</div>\n)\n}\n</li>\n<li>\n<Link to=\"/contact\">\nContact\n</Link>\n</li>\n</ul>\n<button\nclassName=\"theme-btn\"\nonClick={() => setDark(!dark)}\n>\n{\ndark\n? <FaSun />\n: <FaMoon />\n}\n</button>\n</nav>\n);\n}\nexport default Navbar;\n\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\nSidebar.jsx\nimport { Link } from \"react-router-dom\";\nfunction Sidebar() {\nreturn (\n<aside>\n<h3>Categories</h3>\n<p>\n<Link to=\"/courses\">\nFrontend\n</Link>\n</p>\n<p>\n<Link to=\"/courses\">\nBackend\n</Link>\n</p>\n<p>\n<Link to=\"/courses\">\nDatabase\n</Link>\n</p>\n<p>\n<Link to=\"/courses\">\nCloud\n</Link>\n</p>\n<hr />\n<h3>Quick Menu</h3>\n<p>\n<Link to=\"/\">\nDashboard\n</Link>\n</p>\n<p>\n<Link to=\"/add-course\">\nAdd Course\n</Link>\n</p>\n<p>\n<Link to=\"/contact\">\nContact\n</Link>\n</p>\n</aside>\n);\n}\nexport default Sidebar;\n\u2026\u2026\u2026\u2026\u2026\u2026\u2026..\nHero.jsx\nimport { motion } from \"framer-motion\";\nfunction Hero() {\nreturn (\n<motion.section\nclassName=\"hero\"\ninitial={{\nopacity: 0,\ny: -50\n}}\nanimate={{\nopacity: 1,\ny: 0\n}}\ntransition={{\nduration: 0.8\n}}\n>\n<h1>\nLearn Modern Technology\n</h1>\n<p>\nBuild Real World Applications\nusing React, Java,\nNode JS and MERN Stack\n</p>\n<button>\nStart Learning\n</button>\n</motion.section>\n);\n}\nexport default Hero;\n\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026.\nFooter.jsx\nfunction Footer() {\nconst year =\nnew Date().getFullYear();\nreturn (\n<footer>\n<h3>\nSkillHub Learning Platform\n</h3>\n<p>\n\u00a9 {year} All Rights Reserved\n</p>\n</footer>\n);\n}\nexport default Footer;\n\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026.\nCourseCard.jsx\nimport { FaUsers } from \"react-icons/fa\";\nfunction CourseCard({\ntitle,\nstudents\n}) {\nreturn (\n<div className=\"card\">\n<h2>\n{title}\n</h2>\n<p>\n<FaUsers />\n{\" \"}\nStudents :\n{\" \"}\n{students}\n</p>\n<button>\nView Course\n</button>\n</div>\n);\n}\nexport default CourseCard;\n\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\nThemeContext.jsx\nimport {\ncreateContext,\nuseState\n}\nfrom \"react\";\nexport const ThemeContext =\ncreateContext();\nexport function ThemeProvider({\nchildren\n}) {\nconst [dark, setDark] =\nuseState(false);\nreturn (\n<ThemeContext.Provider\nvalue={{\ndark,\nsetDark\n}}\n>\n<div\nclassName={\ndark\n? \"dark\"\n: \"\"\n}\n>\n{children}\n</div>\n</ThemeContext.Provider>\n);\n}\n\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026.\n\u251c\u2500\u2500 pages\n\u251c\u2500\u2500 Home.jsx\n\u251c\u2500\u2500 Courses.jsx\n\u251c\u2500\u2500 Contact.jsx\n\u2514\u2500\u2500 AddCourse.jsx\nHome.jsx\nimport { useEffect, useState } from \"react\";\nimport Hero from \"../components/Hero\";\nimport CourseCard from \"../components/CourseCard\";\nimport API from \"../api/courseApi\";\nfunction Home() {\nconst [courses, setCourses] = useState([]);\nconst [search, setSearch] = useState(\"\");\nconst [loading, setLoading] = useState(true);\nconst [error, setError] = useState(\"\");\nuseEffect(() => {\nfetchCourses();\n}, []);\nasync function fetchCourses() {\ntry {\nconst response =\nawait API.get(\"/courses\");\nsetCourses(response.data);\n}\ncatch (err) {\nsetError(\n\"Unable to Load Courses\"\n);\n}\nfinally {\nsetLoading(false);\n}\n}\nif (loading)\nreturn <h2>Loading Courses...</h2>;\nif (error)\nreturn <h2>{error}</h2>;\nreturn (\n<>\n<Hero />\n<input\nclassName=\"search\"\ntype=\"text\"\nplaceholder=\"Search Course\"\nvalue={search}\nonChange={(e) =>\nsetSearch(e.target.value)\n}\n/>\n<div className=\"courses\">\n{\ncourses\n.filter((course) =>\ncourse.title\n.toLowerCase()\n.includes(\nsearch.toLowerCase()\n)\n)\n.map((course) => (\n<CourseCard\nkey={course._id}\ntitle={course.title}\nstudents={course.students}\n/>\n))\n}\n</div>\n</>\n);\n}\nexport default Home;\n\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026..\nCourses.jsx\nimport { useEffect, useState } from \"react\";\nimport API from \"../api/courseApi\";\nfunction Courses() {\nconst [courses, setCourses] =\nuseState([]);\nuseEffect(() => {\ngetCourses();\n}, []);\nasync function getCourses() {\ntry {\nconst response =\nawait API.get(\"/courses\");\nsetCourses(response.data);\n}\ncatch (error) {\nconsole.log(error);\n}\n}\nreturn (\n<div className=\"page-container\">\n<h1>Available Courses</h1>\n<h3>\nTotal Courses :\n{\" \"}\n{courses.length}\n</h3>\n{\ncourses.map((course) => (\n<div\nkey={course._id}\nclassName=\"course-item\"\n>\n\ud83d\udcd8 {course.title}\n{\" \"}\n(\n{course.students}\nStudents\n)\n</div>\n))\n}\n</div>\n);\n}\nexport default Courses;\n\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026.\nContact.jsx\nimport { useState } from \"react\";\nimport API from \"../api/courseApi\";\nimport { toast } from \"react-toastify\";\nfunction Contact() {\nconst [formData, setFormData] =\nuseState({\nname: \"\",\nemail: \"\",\nmessage: \"\"\n});\nasync function handleSubmit(e) {\ne.preventDefault();\nif (\n!formData.name ||\n!formData.email ||\n!formData.message\n) {\ntoast.error(\n\"All Fields Required\"\n);\nreturn;\n}\ntry {\nawait API.post(\n\"/contact\",\nformData\n);\ntoast.success(\n\"Message Sent Successfully\"\n);\nsetFormData({\nname: \"\",\nemail: \"\",\nmessage: \"\"\n});\n}\ncatch (error) {\ntoast.error(\n\"Failed To Send Message\"\n);\n}\n}\nreturn (\n<div className=\"page-container\">\n<h1>Contact Us</h1>\n<form onSubmit={handleSubmit}>\n<input\ntype=\"text\"\nplaceholder=\"Enter Name\"\nvalue={formData.name}\nonChange={(e) =>\nsetFormData({\n...formData,\nname: e.target.value\n})\n}\n/>\n<br /><br />\n<input\ntype=\"email\"\nplaceholder=\"Enter Email\"\nvalue={formData.email}\nonChange={(e) =>\nsetFormData({\n...formData,\nemail: e.target.value\n})\n}\n/>\n<br /><br />\n<textarea\nrows=\"5\"\nplaceholder=\"Enter Message\"\nvalue={formData.message}\nonChange={(e) =>\nsetFormData({\n...formData,\nmessage: e.target.value\n})\n}\n/>\n<br /><br />\n<button type=\"submit\">\nSend Message\n</button>\n</form>\n</div>\n);\n}\nexport default Contact;\n\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026.\nAddCourse.jsx\nimport { useState } from \"react\";\nimport API from \"../api/courseApi\";\nimport { toast } from \"react-toastify\";\nfunction AddCourse() {\nconst [course, setCourse] =\nuseState({\ntitle: \"\",\nstudents: \"\"\n});\nasync function handleSubmit(e) {\ne.preventDefault();\nif (\n!course.title ||\n!course.students\n) {\ntoast.error(\n\"All Fields Required\"\n);\nreturn;\n}\ntry {\nawait API.post(\n\"/courses\",\ncourse\n);\ntoast.success(\n\"Course Added Successfully\"\n);\nsetCourse({\ntitle: \"\",\nstudents: \"\"\n});\n}\ncatch (error) {\ntoast.error(\n\"Failed To Add Course\"\n);\n}\n}\nreturn (\n<div className=\"page-container\">\n<h1>Add Course</h1>\n<form onSubmit={handleSubmit}>\n<input\ntype=\"text\"\nplaceholder=\"Course Title\"\nvalue={course.title}\nonChange={(e) =>\nsetCourse({\n...course,\ntitle: e.target.value\n})\n}\n/>\n<br /><br />\n<input\ntype=\"number\"\nplaceholder=\"Students Count\"\nvalue={course.students}\nonChange={(e) =>\nsetCourse({\n...course,\nstudents: e.target.value\n})\n}\n/>\n<br /><br />\n<button type=\"submit\">\nAdd Course\n</button>\n</form>\n</div>\n);\n}\nexport default AddCourse;\n\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026..\nInside src folder\n\u251c\u2500\u2500 src\n\u251c\u2500\u2500 App.jsx\n\u251c\u2500\u2500 main.jsx\n\u2514\u2500\u2500 index.css\nApp.jsx\nimport { BrowserRouter, Routes, Route } from \"react-router-dom\";\nimport Navbar from \"./components/Navbar\";\nimport Sidebar from \"./components/Sidebar\";\nimport Footer from \"./components/Footer\";\nimport Home from \"./pages/Home\";\nimport Courses from \"./pages/Courses\";\nimport Contact from \"./pages/Contact\";\nimport AddCourse from \"./pages/AddCourse\";\nimport { ThemeProvider } from \"./components/ThemeContext\";\nimport { ToastContainer } from \"react-toastify\";\nfunction App() {\nreturn (\n<ThemeProvider>\n<BrowserRouter>\n<Navbar />\n<div className=\"layout\">\n<Sidebar />\n<main>\n<Routes>\n<Route\npath=\"/\"\nelement={<Home />}\n/>\n<Route\npath=\"/courses\"\nelement={<Courses />}\n/>\n<Route\npath=\"/contact\"\nelement={<Contact />}\n/>\n<Route\npath=\"/add-course\"\nelement={<AddCourse />}\n/>\n</Routes>\n</main>\n</div>\n<Footer />\n<ToastContainer\nposition=\"top-right\"\nautoClose={3000}\n/>\n</BrowserRouter>\n</ThemeProvider>\n);\n}\nexport default App;\n\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\nmain.jsx\nno changes required in main.jsx. since we have only one component \u201cApp.jsx\u201d\n\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026..\nindex.css\n* {\nmargin: 0;\npadding: 0;\nbox-sizing: border-box;\n}\nbody {\nfont-family: Arial, Helvetica, sans-serif;\nbackground-image: url(\"./assets/background.jpg\");\nbackground-size: cover;\nbackground-position: center;\nbackground-attachment: fixed;\n}\n/* ===========================\nNAVBAR\n=========================== */\nnav {\nheight: 70px;\nbackground: #111;\ncolor: white;\ndisplay: flex;\njustify-content: space-between;\nalign-items: center;\npadding: 0 40px;\n}\nnav h2 {\ncursor: pointer;\n}\nnav ul {\ndisplay: flex;\ngap: 30px;\nlist-style: none;\n}\nnav ul li {\nposition: relative;\ncursor: pointer;\n}\nnav a {\ntext-decoration: none;\ncolor: white;\nfont-weight: bold;\n}\n.theme-btn {\npadding: 10px 15px;\nborder: none;\nborder-radius: 8px;\ncursor: pointer;\n}\n/* ===========================\nDROPDOWN\n=========================== */\n.dropdown {\nposition: absolute;\ntop: 35px;\nleft: 0;\nbackground: white;\nwidth: 180px;\nborder-radius: 8px;\nbox-shadow: 0 4px 10px rgba(0,0,0,0.2);\ndisplay: flex;\nflex-direction: column;\nz-index: 100;\n}\n.dropdown a {\ncolor: black;\npadding: 12px;\ntext-decoration: none;\n}\n.dropdown a:hover {\nbackground: #f1f1f1;\n}\n/* ===========================\nLAYOUT\n=========================== */\n.layout {\ndisplay: flex;\nmin-height: calc(100vh - 140px);\n}\nmain {\nflex: 1;\npadding: 25px;\n}\n/* ===========================\nSIDEBAR\n=========================== */\naside {\nwidth: 230px;\nbackground: #222;\ncolor: white;\npadding: 20px;\n}\naside h3 {\nmargin-bottom: 15px;\n}\naside p {\nmargin-bottom: 10px;\n}\naside a {\ncolor: white;\ntext-decoration: none;\n}\naside a:hover {\ncolor: #00bfff;\n}\naside hr {\nmargin: 20px 0;\n}\n/* ===========================\nHERO SECTION\n=========================== */\n.hero {\nbackground: white;\npadding: 50px;\nborder-radius: 15px;\nmargin-bottom: 25px;\n}\n.hero h1 {\nmargin-bottom: 15px;\ncolor: #222;\n}\n.hero p {\nmargin-bottom: 20px;\ncolor: #444;\n}\n.hero button {\npadding: 12px 20px;\nborder: none;\nbackground: #007bff;\ncolor: white;\nborder-radius: 8px;\ncursor: pointer;\n}\n.hero button:hover {\nbackground: #0056b3;\n}\n/* ===========================\nSEARCH BOX\n=========================== */\n.search {\nwidth: 350px;\npadding: 12px;\nborder: 1px solid #ccc;\nborder-radius: 8px;\nmargin-bottom: 25px;\n}\n/* ===========================\nCOURSE CARDS\n=========================== */\n.courses {\ndisplay: flex;\nflex-wrap: wrap;\ngap: 20px;\n}\n.card {\nbackground: white;\nwidth: 260px;\npadding: 20px;\nborder-radius: 15px;\nbox-shadow: 0 4px 8px rgba(0,0,0,0.1);\n}\n.card h2 {\nmargin-bottom: 15px;\n}\n.card p {\nmargin-bottom: 15px;\n}\n.card button {\nwidth: 100%;\npadding: 10px;\nborder: none;\nbackground: #28a745;\ncolor: white;\nborder-radius: 8px;\ncursor: pointer;\n}\n.card button:hover {\nbackground: #1e7e34;\n}\n/* ===========================\nPAGE CONTAINER\n=========================== */\n.page-container {\nbackground: white;\npadding: 25px;\nborder-radius: 15px;\n}\n.page-container h1 {\nmargin-bottom: 20px;\n}\n/* ===========================\nCOURSE PAGE\n=========================== */\n.course-item {\npadding: 15px;\nmargin-bottom: 12px;\nborder-radius: 8px;\nbackground: #f5f5f5;\n}\n/* ===========================\nFORMS\n=========================== */\nform {\nmax-width: 500px;\n}\ninput,\ntextarea {\nwidth: 100%;\npadding: 12px;\nborder: 1px solid #ccc;\nborder-radius: 8px;\n}\nbutton[type=\"submit\"] {\npadding: 12px 20px;\nborder: none;\nbackground: #007bff;\ncolor: white;\nborder-radius: 8px;\ncursor: pointer;\n}\nbutton[type=\"submit\"]:hover {\nbackground: #0056b3;\n}\n/* ===========================\nFOOTER\n=========================== */\nfooter {\nbackground: #111;\ncolor: white;\ntext-align: center;\npadding: 20px;\n}\n/* ===========================\nDARK MODE\n=========================== */\n.dark {\nbackground: #111;\ncolor: white;\nmin-height: 100vh;\n}\n.dark .hero,\n.dark .card,\n.dark .page-container {\nbackground: #333;\ncolor: white;\n}\n.dark .course-item {\nbackground: #444;\n}\n.dark input,\n.dark textarea {\nbackground: #555;\ncolor: white;\nborder: 1px solid #777;\n}\n.dark nav {\nbackground: black;\n}\n.dark aside {\nbackground: #111;\n}\n/* ===========================\nRESPONSIVE\n=========================== */\n@media screen and (max-width: 768px) {\n.layout {\nflex-direction: column;\n}\naside {\nwidth: 100%;\n}\nnav {\nflex-direction: column;\nheight: auto;\ngap: 15px;\npadding: 20px;\n}\nnav ul {\nflex-direction: column;\nalign-items: center;\n}\n.courses {\njustify-content: center;\n}\n.search {\nwidth: 100%;\n}\n.card {\nwidth: 100%;\n}\n}\n\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026.\nBackend process\n\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026.\nFirstly create Data base in the name of \u201cskillhub\u201d and collections \u2013\n1. contacts\n2. courses\n\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026.\n(Folder name is \u201cbackend\u201d)\nYou must be inside of \u201cskillhub-project\\ backend>\nThen install ,\nnpm init -y\nthen install the following,\n\"cors\": \"^2.8.6\",\n\"dotenv\": \"^17.4.2\",\n\"express\": \"^5.2.1\",\n\"mongoose\": \"^9.7.1\"\nEx: npm install express mongoose cors dotenv\n\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026.\n\u2514\u2500\u2500 backend\n\u251c\u2500\u2500 config\n\u2514\u2500\u2500 db.js\ndb.js\nconst mongoose = require(\"mongoose\");\nconst connectDB = async () => {\ntry {\nawait mongoose.connect(\nprocess.env.MONGO_URI\n);\nconsole.log(\n\"MongoDB Connected Successfully\"\n);\n} catch (error) {\nconsole.log(\n\"MongoDB Connection Failed\"\n);\nconsole.log(error);\nprocess.exit(1);\n}\n};\nmodule.exports = connectDB;\n\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\n\u251c\u2500\u2500 controllers\n\u251c\u2500\u2500 courseController.js\n\u2514\u2500\u2500 contactController.js\ncourseController.js\nconst Course =\nrequire(\"../models/Course\");\n// GET ALL COURSES\nconst getCourses =\nasync (req, res) => {\ntry {\nconst courses =\nawait Course.find();\nres.status(200).json(courses);\n} catch (error) {\nres.status(500).json({\nmessage: error.message\n});\n}\n};\n// ADD COURSE\nconst addCourse =\nasync (req, res) => {\ntry {\nconst course =\nawait Course.create({\ntitle: req.body.title,\nstudents: req.body.students\n});\nres.status(201).json(course);\n} catch (error) {\nres.status(500).json({\nmessage: error.message\n});\n}\n};\nmodule.exports = {\ngetCourses,\naddCourse\n};\n\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026.\ncontactController.js\nconst Contact =\nrequire(\"../models/Contact\");\n// SAVE CONTACT MESSAGE\nconst saveMessage =\nasync (req, res) => {\ntry {\nconst message =\nawait Contact.create({\nname: req.body.name,\nemail: req.body.email,\nmessage: req.body.message\n});\nres.status(201).json(message);\n}\ncatch (error) {\nres.status(500).json({\nmessage: error.message\n});\n}\n};\nmodule.exports = {\nsaveMessage\n};\n\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026..\n\u251c\u2500\u2500 models\n\u251c\u2500\u2500 Course.js\n\u2514\u2500\u2500 Contact.js\nCourse.js\nconst mongoose = require(\"mongoose\");\nconst courseSchema =\nnew mongoose.Schema({\ntitle: {\ntype: String,\nrequired: true\n},\nstudents: {\ntype: Number,\nrequired: true\n}\n},\n{\ntimestamps: true\n});\nmodule.exports =\nmongoose.model(\n\"Course\",\ncourseSchema\n);\n\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026.\nContact.js\nconst mongoose = require(\"mongoose\");\nconst contactSchema =\nnew mongoose.Schema({\nname: {\ntype: String,\nrequired: true\n},\nemail: {\ntype: String,\nrequired: true\n},\nmessage: {\ntype: String,\nrequired: true\n}\n},\n{\ntimestamps: true\n});\nmodule.exports =\nmongoose.model(\n\"Contact\",\ncontactSchema\n);\n\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026.\n\u251c\u2500\u2500 routes\n\u251c\u2500\u2500 courseRoutes.js\n\u2514\u2500\u2500 contactRoutes.js\ncourseRoutes.js\nconst express =\nrequire(\"express\");\nconst router =\nexpress.Router();\nconst {\ngetCourses,\naddCourse\n}\n=\nrequire(\n\"../controllers/courseController\"\n);\nrouter.get(\n\"/\",\ngetCourses\n);\nrouter.post(\n\"/\",\naddCourse\n);\nmodule.exports = router;\n\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026..\ncontactRoutes.js\nconst express =\nrequire(\"express\");\nconst router =\nexpress.Router();\nconst {\nsaveMessage\n}\n=\nrequire(\n\"../controllers/contactController\"\n);\nrouter.post(\n\"/\",\nsaveMessage\n);\nmodule.exports = router;\n\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026.\ndirectly under src folder\n\u251c\u2500\u2500 .env\n\u251c\u2500\u2500 server.js\n\u2514\u2500\u2500 package.json\n.env\nPORT=5000\nMONGO_URI=mongodb://127.0.0.1:27017/skillhub\n\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\nserver.js\nrequire(\"dotenv\").config();\nconst express =\nrequire(\"express\");\nconst cors =\nrequire(\"cors\");\nconst connectDB =\nrequire(\"./config/db\");\nconst courseRoutes =\nrequire(\"./routes/courseRoutes\");\nconst contactRoutes =\nrequire(\"./routes/contactRoutes\");\nconst app = express();\n// DATABASE CONNECTION\nconnectDB();\napp.use(cors());\napp.use(express.json());\napp.get(\"/\", (req, res) => {\nres.send(\n\"SkillHub Backend Running\"\n);\n});\napp.use(\n\"/api/courses\",\ncourseRoutes\n);\napp.use(\n\"/api/contact\",\ncontactRoutes\n);\nconst PORT =\nprocess.env.PORT || 5000;\napp.listen(\nPORT,\n() => {\nconsole.log(\n`Server Running on Port ${PORT}`\n);\n}\n);\n\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026..\nPackage.json must look like following\n\u201c{\n\"name\": \"backend\",\n\"version\": \"1.0.0\",\n\"description\": \"\",\n\"main\": \"index.js\",\n\"scripts\": {\n\"start\": \"node server.js\",\n\"dev\": \"nodemon server.js\"\n},\n\"keywords\": [],\n\"author\": \"\",\n\"license\": \"ISC\",\n\"type\": \"commonjs\",\n\"dependencies\": {\n\"cors\": \"^2.8.6\",\n\"dotenv\": \"^17.4.2\",\n\"express\": \"^5.2.1\",\n\"mongoose\": \"^9.7.1\"\n},\n\"devDependencies\": {\n\"nodemon\": \"^3.1.14\"\n}\n}\n\u201d\nDo changes here,\n\"scripts\": {\n\"start\": \"node server.js\",\n\"dev\": \"nodemon server.js\"\n},\n\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026.\nFinally execute :\nCreate two terminal,\nFirstly execute backend and then front end and go to testing API and use post\nmethod and use the following in thunder client or postman API\nPOST method\nhttp://localhost:5000/api/courses\n{\n\"title\": \"React JS\",\n\"students\": 1200\n}\nGET method\nhttp://localhost:5000/api/courses\nPOST method\nhttp://localhost:5000/api/contact\n{\n\"name\": \"XXXX\",\n\"email\": \"xxxx@gmail.com\",\n\"message\": \"Need MERN Training\"\n}\n\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026..\nGo to MongoDB and refresh the collections and we can see the results",
+      "entities": [
+        {
+          "text": "New",
+          "type": "ORG",
+          "start_idx": 0,
+          "end_idx": 0,
+          "confidence": 0.9900602102279663
+        },
+        {
+          "text": "skillhub",
+          "type": "DATE",
+          "start_idx": 1,
+          "end_idx": 1,
+          "confidence": 0.9495580196380615
+        },
+        {
+          "text": "project",
+          "type": "TICKER",
+          "start_idx": 2,
+          "end_idx": 2,
+          "confidence": 0.7742853760719299
+        },
+        {
+          "text": "MERN",
+          "type": "ORG",
+          "start_idx": 4,
+          "end_idx": 4,
+          "confidence": 0.3100000023841858
+        },
+        {
+          "text": "Stack",
+          "type": "MONEY",
+          "start_idx": 5,
+          "end_idx": 5,
+          "confidence": 0.9910328984260559
+        },
+        {
+          "text": "Skill Hub",
+          "type": "MONEY",
+          "start_idx": 7,
+          "end_idx": 8,
+          "confidence": 0.9720735549926758
+        },
+        {
+          "text": "Documentation",
+          "type": "MONEY",
+          "start_idx": 9,
+          "end_idx": 9,
+          "confidence": 0.7833503484725952
+        },
+        {
+          "text": "and",
+          "type": "DATE",
+          "start_idx": 10,
+          "end_idx": 10,
+          "confidence": 0.960017740726471
+        },
+        {
+          "text": "Folder",
+          "type": "MONEY",
+          "start_idx": 11,
+          "end_idx": 11,
+          "confidence": 0.38737621903419495
+        },
+        {
+          "text": "Architecture :",
+          "type": "DATE",
+          "start_idx": 12,
+          "end_idx": 13,
+          "confidence": 0.4551734924316406
+        },
+        {
+          "text": "\u2026",
+          "type": "DATE",
+          "start_idx": 14,
+          "end_idx": 14,
+          "confidence": 0.9557815790176392
+        },
+        {
+          "text": "\u2026",
+          "type": "DATE",
+          "start_idx": 15,
+          "end_idx": 15,
+          "confidence": 0.6592252254486084
+        },
+        {
+          "text": "\u2026",
+          "type": "DATE",
+          "start_idx": 16,
+          "end_idx": 16,
+          "confidence": 0.4691133499145508
+        },
+        {
+          "text": "\u2026",
+          "type": "DATE",
+          "start_idx": 17,
+          "end_idx": 17,
+          "confidence": 0.872020423412323
+        },
+        {
+          "text": "\u2026",
+          "type": "MONEY",
+          "start_idx": 18,
+          "end_idx": 18,
+          "confidence": 0.513929009437561
+        },
+        {
+          "text": "\u2026",
+          "type": "MONEY",
+          "start_idx": 19,
+          "end_idx": 19,
+          "confidence": 0.7502803802490234
+        },
+        {
+          "text": "\u2026",
+          "type": "MONEY",
+          "start_idx": 20,
+          "end_idx": 20,
+          "confidence": 0.5698845982551575
+        },
+        {
+          "text": "\u2026",
+          "type": "EVENT",
+          "start_idx": 21,
+          "end_idx": 21,
+          "confidence": 0.31821560859680176
+        },
+        {
+          "text": "\u2026",
+          "type": "DATE",
+          "start_idx": 23,
+          "end_idx": 23,
+          "confidence": 0.4492478370666504
+        },
+        {
+          "text": "\u2026",
+          "type": "TICKER",
+          "start_idx": 24,
+          "end_idx": 24,
+          "confidence": 0.34337279200553894
+        },
+        {
+          "text": "\u2026",
+          "type": "DATE",
+          "start_idx": 25,
+          "end_idx": 25,
+          "confidence": 0.9607656002044678
+        },
+        {
+          "text": "\u2026",
+          "type": "MONEY",
+          "start_idx": 26,
+          "end_idx": 26,
+          "confidence": 0.9746755957603455
+        },
+        {
+          "text": "\u2026",
+          "type": "DATE",
+          "start_idx": 27,
+          "end_idx": 27,
+          "confidence": 0.8866750001907349
+        },
+        {
+          "text": "\u2026 \u2026",
+          "type": "DATE",
+          "start_idx": 28,
+          "end_idx": 29,
+          "confidence": 0.46632200479507446
+        },
+        {
+          "text": "\u2026",
+          "type": "MONEY",
+          "start_idx": 30,
+          "end_idx": 30,
+          "confidence": 0.8111869096755981
+        },
+        {
+          "text": "skillhub",
+          "type": "MONEY",
+          "start_idx": 33,
+          "end_idx": 33,
+          "confidence": 0.8769583106040955
+        },
+        {
+          "text": "- project \u2502",
+          "type": "DATE",
+          "start_idx": 34,
+          "end_idx": 36,
+          "confidence": 0.5927596092224121
+        },
+        {
+          "text": "\u251c",
+          "type": "DATE",
+          "start_idx": 37,
+          "end_idx": 37,
+          "confidence": 0.9889189600944519
+        },
+        {
+          "text": "\u2500",
+          "type": "MONEY",
+          "start_idx": 38,
+          "end_idx": 38,
+          "confidence": 0.6520265340805054
+        },
+        {
+          "text": "\u2500",
+          "type": "MONEY",
+          "start_idx": 39,
+          "end_idx": 39,
+          "confidence": 0.7731917500495911
+        },
+        {
+          "text": "frontend",
+          "type": "DATE",
+          "start_idx": 40,
+          "end_idx": 40,
+          "confidence": 0.39776259660720825
+        },
+        {
+          "text": "\u2502",
+          "type": "DATE",
+          "start_idx": 41,
+          "end_idx": 41,
+          "confidence": 0.9567075371742249
+        },
+        {
+          "text": "\u251c",
+          "type": "MONEY",
+          "start_idx": 42,
+          "end_idx": 42,
+          "confidence": 0.5267462134361267
+        },
+        {
+          "text": "\u2500",
+          "type": "DATE",
+          "start_idx": 43,
+          "end_idx": 43,
+          "confidence": 0.8965052962303162
+        },
+        {
+          "text": "\u2500 src",
+          "type": "DATE",
+          "start_idx": 44,
+          "end_idx": 45,
+          "confidence": 0.7201669812202454
+        },
+        {
+          "text": "\u2502",
+          "type": "MONEY",
+          "start_idx": 46,
+          "end_idx": 46,
+          "confidence": 0.7444456815719604
+        },
+        {
+          "text": "\u2502",
+          "type": "MONEY",
+          "start_idx": 47,
+          "end_idx": 47,
+          "confidence": 0.9634274244308472
+        },
+        {
+          "text": "\u251c",
+          "type": "DATE",
+          "start_idx": 48,
+          "end_idx": 48,
+          "confidence": 0.9786568284034729
+        },
+        {
+          "text": "\u2500",
+          "type": "MONEY",
+          "start_idx": 49,
+          "end_idx": 49,
+          "confidence": 0.6173051595687866
+        },
+        {
+          "text": "\u2500",
+          "type": "DATE",
+          "start_idx": 50,
+          "end_idx": 50,
+          "confidence": 0.5071823000907898
+        },
+        {
+          "text": "api",
+          "type": "ORG",
+          "start_idx": 51,
+          "end_idx": 51,
+          "confidence": 0.5256108045578003
+        },
+        {
+          "text": "\u2502",
+          "type": "MONEY",
+          "start_idx": 52,
+          "end_idx": 52,
+          "confidence": 0.5021392107009888
+        },
+        {
+          "text": "\u2502",
+          "type": "MONEY",
+          "start_idx": 54,
+          "end_idx": 54,
+          "confidence": 0.551093578338623
+        },
+        {
+          "text": "\u2500",
+          "type": "MONEY",
+          "start_idx": 56,
+          "end_idx": 56,
+          "confidence": 0.7748948335647583
+        },
+        {
+          "text": "\u2500",
+          "type": "DATE",
+          "start_idx": 57,
+          "end_idx": 57,
+          "confidence": 0.7850990891456604
+        },
+        {
+          "text": "courseApi",
+          "type": "MONEY",
+          "start_idx": 58,
+          "end_idx": 58,
+          "confidence": 0.3175351619720459
+        },
+        {
+          "text": "js",
+          "type": "DATE",
+          "start_idx": 60,
+          "end_idx": 60,
+          "confidence": 0.9543812274932861
+        },
+        {
+          "text": "\u2502",
+          "type": "MONEY",
+          "start_idx": 61,
+          "end_idx": 61,
+          "confidence": 0.9543696641921997
+        },
+        {
+          "text": "\u2502",
+          "type": "MONEY",
+          "start_idx": 62,
+          "end_idx": 62,
+          "confidence": 0.8578980565071106
+        },
+        {
+          "text": "\u2502",
+          "type": "MONEY",
+          "start_idx": 63,
+          "end_idx": 63,
+          "confidence": 0.563527524471283
+        },
+        {
+          "text": "\u2502",
+          "type": "MONEY",
+          "start_idx": 64,
+          "end_idx": 64,
+          "confidence": 0.7576252222061157
+        },
+        {
+          "text": "\u2502",
+          "type": "DATE",
+          "start_idx": 65,
+          "end_idx": 65,
+          "confidence": 0.4253848195075989
+        },
+        {
+          "text": "\u251c",
+          "type": "EVENT",
+          "start_idx": 66,
+          "end_idx": 66,
+          "confidence": 0.46791282296180725
+        },
+        {
+          "text": "\u2500",
+          "type": "DATE",
+          "start_idx": 68,
+          "end_idx": 68,
+          "confidence": 0.7919875979423523
+        },
+        {
+          "text": "components",
+          "type": "DATE",
+          "start_idx": 69,
+          "end_idx": 69,
+          "confidence": 0.741858720779419
+        },
+        {
+          "text": "\u2502",
+          "type": "MONEY",
+          "start_idx": 70,
+          "end_idx": 70,
+          "confidence": 0.4501606225967407
+        },
+        {
+          "text": "\u2502",
+          "type": "MONEY",
+          "start_idx": 71,
+          "end_idx": 71,
+          "confidence": 0.9949027299880981
+        },
+        {
+          "text": "\u2502",
+          "type": "MONEY",
+          "start_idx": 72,
+          "end_idx": 72,
+          "confidence": 0.9776473045349121
+        },
+        {
+          "text": "\u251c",
+          "type": "MONEY",
+          "start_idx": 73,
+          "end_idx": 73,
+          "confidence": 0.781274676322937
+        },
+        {
+          "text": "\u2500",
+          "type": "ORG",
+          "start_idx": 74,
+          "end_idx": 74,
+          "confidence": 0.3221418261528015
+        },
+        {
+          "text": "\u2500",
+          "type": "DATE",
+          "start_idx": 75,
+          "end_idx": 75,
+          "confidence": 0.8366853594779968
+        },
+        {
+          "text": "jsx",
+          "type": "DATE",
+          "start_idx": 78,
+          "end_idx": 78,
+          "confidence": 0.7250115275382996
+        },
+        {
+          "text": "\u2502",
+          "type": "DATE",
+          "start_idx": 79,
+          "end_idx": 79,
+          "confidence": 0.384773850440979
+        },
+        {
+          "text": "\u2502",
+          "type": "MONEY",
+          "start_idx": 81,
+          "end_idx": 81,
+          "confidence": 0.7182835936546326
+        },
+        {
+          "text": "\u251c",
+          "type": "EVENT",
+          "start_idx": 82,
+          "end_idx": 82,
+          "confidence": 0.6621002554893494
+        },
+        {
+          "text": "\u2500",
+          "type": "MONEY",
+          "start_idx": 83,
+          "end_idx": 83,
+          "confidence": 0.9908114671707153
+        },
+        {
+          "text": "\u2500",
+          "type": "DATE",
+          "start_idx": 84,
+          "end_idx": 84,
+          "confidence": 0.9490373134613037
+        },
+        {
+          "text": "Sidebar",
+          "type": "MONEY",
+          "start_idx": 85,
+          "end_idx": 85,
+          "confidence": 0.29688331484794617
+        },
+        {
+          "text": ".",
+          "type": "TICKER",
+          "start_idx": 86,
+          "end_idx": 86,
+          "confidence": 0.5930614471435547
+        },
+        {
+          "text": "jsx",
+          "type": "DATE",
+          "start_idx": 87,
+          "end_idx": 87,
+          "confidence": 0.7935982942581177
+        },
+        {
+          "text": "\u2502",
+          "type": "DATE",
+          "start_idx": 90,
+          "end_idx": 90,
+          "confidence": 0.826522707939148
+        },
+        {
+          "text": "\u251c",
+          "type": "MONEY",
+          "start_idx": 91,
+          "end_idx": 91,
+          "confidence": 0.8329351544380188
+        },
+        {
+          "text": "\u2500",
+          "type": "MONEY",
+          "start_idx": 92,
+          "end_idx": 92,
+          "confidence": 0.620145857334137
+        },
+        {
+          "text": "\u2500",
+          "type": "DATE",
+          "start_idx": 93,
+          "end_idx": 93,
+          "confidence": 0.5836018919944763
+        },
+        {
+          "text": "Hero",
+          "type": "DATE",
+          "start_idx": 94,
+          "end_idx": 94,
+          "confidence": 0.9385886788368225
+        },
+        {
+          "text": "jsx",
+          "type": "MONEY",
+          "start_idx": 96,
+          "end_idx": 96,
+          "confidence": 0.9352975487709045
+        },
+        {
+          "text": "\u2502",
+          "type": "MONEY",
+          "start_idx": 97,
+          "end_idx": 97,
+          "confidence": 0.9014392495155334
+        },
+        {
+          "text": "\u2502",
+          "type": "MONEY",
+          "start_idx": 98,
+          "end_idx": 98,
+          "confidence": 0.5814149975776672
+        },
+        {
+          "text": "\u2502",
+          "type": "DATE",
+          "start_idx": 99,
+          "end_idx": 99,
+          "confidence": 0.750812292098999
+        },
+        {
+          "text": "\u251c",
+          "type": "MONEY",
+          "start_idx": 100,
+          "end_idx": 100,
+          "confidence": 0.918515682220459
+        },
+        {
+          "text": "\u2500",
+          "type": "MONEY",
+          "start_idx": 101,
+          "end_idx": 101,
+          "confidence": 0.8683392405509949
+        },
+        {
+          "text": "\u2500",
+          "type": "DATE",
+          "start_idx": 102,
+          "end_idx": 102,
+          "confidence": 0.6145915389060974
+        },
+        {
+          "text": "Footer",
+          "type": "DATE",
+          "start_idx": 103,
+          "end_idx": 103,
+          "confidence": 0.6311938762664795
+        },
+        {
+          "text": ".",
+          "type": "MONEY",
+          "start_idx": 104,
+          "end_idx": 104,
+          "confidence": 0.6764457821846008
+        },
+        {
+          "text": "\u2502",
+          "type": "MONEY",
+          "start_idx": 106,
+          "end_idx": 106,
+          "confidence": 0.9437570571899414
+        },
+        {
+          "text": "\u2502",
+          "type": "MONEY",
+          "start_idx": 108,
+          "end_idx": 108,
+          "confidence": 0.5622377395629883
+        },
+        {
+          "text": "\u251c",
+          "type": "DATE",
+          "start_idx": 109,
+          "end_idx": 109,
+          "confidence": 0.8411659598350525
+        },
+        {
+          "text": "\u2500",
+          "type": "MONEY",
+          "start_idx": 111,
+          "end_idx": 111,
+          "confidence": 0.5799752473831177
+        },
+        {
+          "text": "CourseCard",
+          "type": "DATE",
+          "start_idx": 112,
+          "end_idx": 112,
+          "confidence": 0.8525683283805847
+        },
+        {
+          "text": ".",
+          "type": "MONEY",
+          "start_idx": 113,
+          "end_idx": 113,
+          "confidence": 0.9009417295455933
+        },
+        {
+          "text": "jsx",
+          "type": "MONEY",
+          "start_idx": 114,
+          "end_idx": 114,
+          "confidence": 0.7108697891235352
+        },
+        {
+          "text": "\u2502",
+          "type": "DATE",
+          "start_idx": 115,
+          "end_idx": 115,
+          "confidence": 0.5416163206100464
+        },
+        {
+          "text": "\u2502",
+          "type": "MONEY",
+          "start_idx": 116,
+          "end_idx": 116,
+          "confidence": 0.587356686592102
+        },
+        {
+          "text": "\u2502",
+          "type": "DATE",
+          "start_idx": 117,
+          "end_idx": 117,
+          "confidence": 0.3951681852340698
+        },
+        {
+          "text": "\u2514",
+          "type": "MONEY",
+          "start_idx": 118,
+          "end_idx": 118,
+          "confidence": 0.8364517092704773
+        },
+        {
+          "text": "\u2500 \u2500",
+          "type": "DATE",
+          "start_idx": 119,
+          "end_idx": 120,
+          "confidence": 0.434060662984848
+        },
+        {
+          "text": "ThemeContext",
+          "type": "DATE",
+          "start_idx": 121,
+          "end_idx": 121,
+          "confidence": 0.9850387573242188
+        },
+        {
+          "text": "jsx",
+          "type": "MONEY",
+          "start_idx": 123,
+          "end_idx": 123,
+          "confidence": 0.5159062743186951
+        },
+        {
+          "text": "\u2502",
+          "type": "MONEY",
+          "start_idx": 124,
+          "end_idx": 124,
+          "confidence": 0.9606124758720398
+        },
+        {
+          "text": "\u2502",
+          "type": "DATE",
+          "start_idx": 125,
+          "end_idx": 125,
+          "confidence": 0.6825853586196899
+        },
+        {
+          "text": "\u2502",
+          "type": "MONEY",
+          "start_idx": 126,
+          "end_idx": 126,
+          "confidence": 0.6559176445007324
+        },
+        {
+          "text": "\u2502",
+          "type": "DATE",
+          "start_idx": 127,
+          "end_idx": 127,
+          "confidence": 0.9891631603240967
+        }
+      ],
+      "tokens": [
+        {
+          "text": "New",
+          "label": "B-ORG",
+          "confidence": 0.9900602102279663
+        },
+        {
+          "text": "skillhub",
+          "label": "B-DATE",
+          "confidence": 0.9495580196380615
+        },
+        {
+          "text": "project",
+          "label": "B-TICKER",
+          "confidence": 0.7742853760719299
+        },
+        {
+          "text": "(",
+          "label": "O",
+          "confidence": 0.8895087838172913
+        },
+        {
+          "text": "MERN",
+          "label": "B-ORG",
+          "confidence": 0.3100000023841858
+        },
+        {
+          "text": "Stack",
+          "label": "B-MONEY",
+          "confidence": 0.9910328984260559
+        },
+        {
+          "text": ")",
+          "label": "O",
+          "confidence": 0.827566921710968
+        },
+        {
+          "text": "Skill",
+          "label": "B-MONEY",
+          "confidence": 0.9969792366027832
+        },
+        {
+          "text": "Hub",
+          "label": "I-MONEY",
+          "confidence": 0.9720735549926758
+        },
+        {
+          "text": "Documentation",
+          "label": "B-MONEY",
+          "confidence": 0.7833503484725952
+        },
+        {
+          "text": "and",
+          "label": "B-DATE",
+          "confidence": 0.960017740726471
+        },
+        {
+          "text": "Folder",
+          "label": "B-MONEY",
+          "confidence": 0.38737621903419495
+        },
+        {
+          "text": "Architecture",
+          "label": "B-DATE",
+          "confidence": 0.931203305721283
+        },
+        {
+          "text": ":",
+          "label": "I-DATE",
+          "confidence": 0.4551734924316406
+        },
+        {
+          "text": "\u2026",
+          "label": "B-DATE",
+          "confidence": 0.9557815790176392
+        },
+        {
+          "text": "\u2026",
+          "label": "B-DATE",
+          "confidence": 0.6592252254486084
+        },
+        {
+          "text": "\u2026",
+          "label": "B-DATE",
+          "confidence": 0.4691133499145508
+        },
+        {
+          "text": "\u2026",
+          "label": "B-DATE",
+          "confidence": 0.872020423412323
+        },
+        {
+          "text": "\u2026",
+          "label": "B-MONEY",
+          "confidence": 0.513929009437561
+        },
+        {
+          "text": "\u2026",
+          "label": "B-MONEY",
+          "confidence": 0.7502803802490234
+        },
+        {
+          "text": "\u2026",
+          "label": "B-MONEY",
+          "confidence": 0.5698845982551575
+        },
+        {
+          "text": "\u2026",
+          "label": "B-EVENT",
+          "confidence": 0.31821560859680176
+        },
+        {
+          "text": "\u2026",
+          "label": "O",
+          "confidence": 0.9922099113464355
+        },
+        {
+          "text": "\u2026",
+          "label": "B-DATE",
+          "confidence": 0.4492478370666504
+        },
+        {
+          "text": "\u2026",
+          "label": "I-TICKER",
+          "confidence": 0.34337279200553894
+        },
+        {
+          "text": "\u2026",
+          "label": "B-DATE",
+          "confidence": 0.9607656002044678
+        },
+        {
+          "text": "\u2026",
+          "label": "B-MONEY",
+          "confidence": 0.9746755957603455
+        },
+        {
+          "text": "\u2026",
+          "label": "I-DATE",
+          "confidence": 0.8866750001907349
+        },
+        {
+          "text": "\u2026",
+          "label": "B-DATE",
+          "confidence": 0.46632200479507446
+        },
+        {
+          "text": "\u2026",
+          "label": "I-DATE",
+          "confidence": 0.5116565227508545
+        },
+        {
+          "text": "\u2026",
+          "label": "B-MONEY",
+          "confidence": 0.8111869096755981
+        },
+        {
+          "text": ".",
+          "label": "O",
+          "confidence": 0.992395281791687
+        },
+        {
+          "text": ".",
+          "label": "O",
+          "confidence": 0.9827480912208557
+        },
+        {
+          "text": "skillhub",
+          "label": "B-MONEY",
+          "confidence": 0.8769583106040955
+        },
+        {
+          "text": "-",
+          "label": "I-DATE",
+          "confidence": 0.6091113686561584
+        },
+        {
+          "text": "project",
+          "label": "I-DATE",
+          "confidence": 0.5927596092224121
+        },
+        {
+          "text": "\u2502",
+          "label": "I-DATE",
+          "confidence": 0.6095539927482605
+        },
+        {
+          "text": "\u251c",
+          "label": "B-DATE",
+          "confidence": 0.9889189600944519
+        },
+        {
+          "text": "\u2500",
+          "label": "B-MONEY",
+          "confidence": 0.6520265340805054
+        },
+        {
+          "text": "\u2500",
+          "label": "B-MONEY",
+          "confidence": 0.7731917500495911
+        },
+        {
+          "text": "frontend",
+          "label": "B-DATE",
+          "confidence": 0.39776259660720825
+        },
+        {
+          "text": "\u2502",
+          "label": "B-DATE",
+          "confidence": 0.9567075371742249
+        },
+        {
+          "text": "\u251c",
+          "label": "B-MONEY",
+          "confidence": 0.5267462134361267
+        },
+        {
+          "text": "\u2500",
+          "label": "B-DATE",
+          "confidence": 0.8965052962303162
+        },
+        {
+          "text": "\u2500",
+          "label": "B-DATE",
+          "confidence": 0.8892709016799927
+        },
+        {
+          "text": "src",
+          "label": "I-DATE",
+          "confidence": 0.7201669812202454
+        },
+        {
+          "text": "\u2502",
+          "label": "B-MONEY",
+          "confidence": 0.7444456815719604
+        },
+        {
+          "text": "\u2502",
+          "label": "B-MONEY",
+          "confidence": 0.9634274244308472
+        },
+        {
+          "text": "\u251c",
+          "label": "B-DATE",
+          "confidence": 0.9786568284034729
+        },
+        {
+          "text": "\u2500",
+          "label": "B-MONEY",
+          "confidence": 0.6173051595687866
+        },
+        {
+          "text": "\u2500",
+          "label": "B-DATE",
+          "confidence": 0.5071823000907898
+        },
+        {
+          "text": "api",
+          "label": "B-ORG",
+          "confidence": 0.5256108045578003
+        },
+        {
+          "text": "\u2502",
+          "label": "I-MONEY",
+          "confidence": 0.5021392107009888
+        },
+        {
+          "text": "\u2502",
+          "label": "O",
+          "confidence": 0.6364977359771729
+        },
+        {
+          "text": "\u2502",
+          "label": "B-MONEY",
+          "confidence": 0.551093578338623
+        },
+        {
+          "text": "\u2514",
+          "label": "O",
+          "confidence": 0.9918020367622375
+        },
+        {
+          "text": "\u2500",
+          "label": "B-MONEY",
+          "confidence": 0.7748948335647583
+        },
+        {
+          "text": "\u2500",
+          "label": "I-DATE",
+          "confidence": 0.7850990891456604
+        },
+        {
+          "text": "courseApi",
+          "label": "I-MONEY",
+          "confidence": 0.3175351619720459
+        },
+        {
+          "text": ".",
+          "label": "O",
+          "confidence": 0.9769167304039001
+        },
+        {
+          "text": "js",
+          "label": "I-DATE",
+          "confidence": 0.9543812274932861
+        },
+        {
+          "text": "\u2502",
+          "label": "B-MONEY",
+          "confidence": 0.9543696641921997
+        },
+        {
+          "text": "\u2502",
+          "label": "B-MONEY",
+          "confidence": 0.8578980565071106
+        },
+        {
+          "text": "\u2502",
+          "label": "B-MONEY",
+          "confidence": 0.563527524471283
+        },
+        {
+          "text": "\u2502",
+          "label": "B-MONEY",
+          "confidence": 0.7576252222061157
+        },
+        {
+          "text": "\u2502",
+          "label": "I-DATE",
+          "confidence": 0.4253848195075989
+        },
+        {
+          "text": "\u251c",
+          "label": "B-EVENT",
+          "confidence": 0.46791282296180725
+        },
+        {
+          "text": "\u2500",
+          "label": "O",
+          "confidence": 0.5043594837188721
+        },
+        {
+          "text": "\u2500",
+          "label": "B-DATE",
+          "confidence": 0.7919875979423523
+        },
+        {
+          "text": "components",
+          "label": "B-DATE",
+          "confidence": 0.741858720779419
+        },
+        {
+          "text": "\u2502",
+          "label": "I-MONEY",
+          "confidence": 0.4501606225967407
+        },
+        {
+          "text": "\u2502",
+          "label": "B-MONEY",
+          "confidence": 0.9949027299880981
+        },
+        {
+          "text": "\u2502",
+          "label": "B-MONEY",
+          "confidence": 0.9776473045349121
+        },
+        {
+          "text": "\u251c",
+          "label": "B-MONEY",
+          "confidence": 0.781274676322937
+        },
+        {
+          "text": "\u2500",
+          "label": "B-ORG",
+          "confidence": 0.3221418261528015
+        },
+        {
+          "text": "\u2500",
+          "label": "B-DATE",
+          "confidence": 0.8366853594779968
+        },
+        {
+          "text": "Navbar",
+          "label": "O",
+          "confidence": 0.7544039487838745
+        },
+        {
+          "text": ".",
+          "label": "O",
+          "confidence": 0.9974606037139893
+        },
+        {
+          "text": "jsx",
+          "label": "B-DATE",
+          "confidence": 0.7250115275382996
+        },
+        {
+          "text": "\u2502",
+          "label": "B-DATE",
+          "confidence": 0.384773850440979
+        },
+        {
+          "text": "\u2502",
+          "label": "O",
+          "confidence": 0.985698401927948
+        },
+        {
+          "text": "\u2502",
+          "label": "B-MONEY",
+          "confidence": 0.7182835936546326
+        },
+        {
+          "text": "\u251c",
+          "label": "B-EVENT",
+          "confidence": 0.6621002554893494
+        },
+        {
+          "text": "\u2500",
+          "label": "B-MONEY",
+          "confidence": 0.9908114671707153
+        },
+        {
+          "text": "\u2500",
+          "label": "I-DATE",
+          "confidence": 0.9490373134613037
+        },
+        {
+          "text": "Sidebar",
+          "label": "B-MONEY",
+          "confidence": 0.29688331484794617
+        },
+        {
+          "text": ".",
+          "label": "I-TICKER",
+          "confidence": 0.5930614471435547
+        },
+        {
+          "text": "jsx",
+          "label": "B-DATE",
+          "confidence": 0.7935982942581177
+        },
+        {
+          "text": "\u2502",
+          "label": "O",
+          "confidence": 0.9382191300392151
+        },
+        {
+          "text": "\u2502",
+          "label": "O",
+          "confidence": 0.547742486000061
+        },
+        {
+          "text": "\u2502",
+          "label": "B-DATE",
+          "confidence": 0.826522707939148
+        },
+        {
+          "text": "\u251c",
+          "label": "B-MONEY",
+          "confidence": 0.8329351544380188
+        },
+        {
+          "text": "\u2500",
+          "label": "B-MONEY",
+          "confidence": 0.620145857334137
+        },
+        {
+          "text": "\u2500",
+          "label": "I-DATE",
+          "confidence": 0.5836018919944763
+        },
+        {
+          "text": "Hero",
+          "label": "B-DATE",
+          "confidence": 0.9385886788368225
+        },
+        {
+          "text": ".",
+          "label": "O",
+          "confidence": 0.8776657581329346
+        },
+        {
+          "text": "jsx",
+          "label": "B-MONEY",
+          "confidence": 0.9352975487709045
+        },
+        {
+          "text": "\u2502",
+          "label": "B-MONEY",
+          "confidence": 0.9014392495155334
+        },
+        {
+          "text": "\u2502",
+          "label": "B-MONEY",
+          "confidence": 0.5814149975776672
+        },
+        {
+          "text": "\u2502",
+          "label": "B-DATE",
+          "confidence": 0.750812292098999
+        },
+        {
+          "text": "\u251c",
+          "label": "B-MONEY",
+          "confidence": 0.918515682220459
+        },
+        {
+          "text": "\u2500",
+          "label": "B-MONEY",
+          "confidence": 0.8683392405509949
+        },
+        {
+          "text": "\u2500",
+          "label": "I-DATE",
+          "confidence": 0.6145915389060974
+        },
+        {
+          "text": "Footer",
+          "label": "B-DATE",
+          "confidence": 0.6311938762664795
+        },
+        {
+          "text": ".",
+          "label": "B-MONEY",
+          "confidence": 0.6764457821846008
+        },
+        {
+          "text": "jsx",
+          "label": "O",
+          "confidence": 0.7966871857643127
+        },
+        {
+          "text": "\u2502",
+          "label": "B-MONEY",
+          "confidence": 0.9437570571899414
+        },
+        {
+          "text": "\u2502",
+          "label": "O",
+          "confidence": 0.566128134727478
+        },
+        {
+          "text": "\u2502",
+          "label": "B-MONEY",
+          "confidence": 0.5622377395629883
+        },
+        {
+          "text": "\u251c",
+          "label": "B-DATE",
+          "confidence": 0.8411659598350525
+        },
+        {
+          "text": "\u2500",
+          "label": "O",
+          "confidence": 0.7477999329566956
+        },
+        {
+          "text": "\u2500",
+          "label": "B-MONEY",
+          "confidence": 0.5799752473831177
+        },
+        {
+          "text": "CourseCard",
+          "label": "B-DATE",
+          "confidence": 0.8525683283805847
+        },
+        {
+          "text": ".",
+          "label": "B-MONEY",
+          "confidence": 0.9009417295455933
+        },
+        {
+          "text": "jsx",
+          "label": "B-MONEY",
+          "confidence": 0.7108697891235352
+        },
+        {
+          "text": "\u2502",
+          "label": "B-DATE",
+          "confidence": 0.5416163206100464
+        },
+        {
+          "text": "\u2502",
+          "label": "B-MONEY",
+          "confidence": 0.587356686592102
+        },
+        {
+          "text": "\u2502",
+          "label": "B-DATE",
+          "confidence": 0.3951681852340698
+        },
+        {
+          "text": "\u2514",
+          "label": "B-MONEY",
+          "confidence": 0.8364517092704773
+        },
+        {
+          "text": "\u2500",
+          "label": "B-DATE",
+          "confidence": 0.5267501473426819
+        },
+        {
+          "text": "\u2500",
+          "label": "I-DATE",
+          "confidence": 0.434060662984848
+        },
+        {
+          "text": "ThemeContext",
+          "label": "B-DATE",
+          "confidence": 0.9850387573242188
+        },
+        {
+          "text": ".",
+          "label": "O",
+          "confidence": 0.7068716287612915
+        },
+        {
+          "text": "jsx",
+          "label": "B-MONEY",
+          "confidence": 0.5159062743186951
+        },
+        {
+          "text": "\u2502",
+          "label": "B-MONEY",
+          "confidence": 0.9606124758720398
+        },
+        {
+          "text": "\u2502",
+          "label": "B-DATE",
+          "confidence": 0.6825853586196899
+        },
+        {
+          "text": "\u2502",
+          "label": "B-MONEY",
+          "confidence": 0.6559176445007324
+        },
+        {
+          "text": "\u2502",
+          "label": "B-DATE",
+          "confidence": 0.9891631603240967
+        }
+      ],
+      "overall_confidence": 0.7316915791016072,
+      "created_at": "2026-06-23T06:41:57.010886Z",
+      "_id": "d12b2970-f1d0-4549-99a6-0429b6eaffc4"
+    },
+    {
+      "user_id": "vyshnavi",
+      "source_type": "news",
+      "text": "Tesla testing a car",
+      "entities": [
+        {
+          "text": "Tesla",
+          "type": "ORG",
+          "start_idx": 0,
+          "end_idx": 0,
+          "confidence": 0.9996337890625
+        },
+        {
+          "text": "testing",
+          "type": "DATE",
+          "start_idx": 1,
+          "end_idx": 1,
+          "confidence": 0.9887455105781555
+        },
+        {
+          "text": "car",
+          "type": "ORG",
+          "start_idx": 3,
+          "end_idx": 3,
+          "confidence": 0.6073286533355713
+        }
+      ],
+      "tokens": [
+        {
+          "text": "Tesla",
+          "label": "B-ORG",
+          "confidence": 0.9996337890625
+        },
+        {
+          "text": "testing",
+          "label": "B-DATE",
+          "confidence": 0.9887455105781555
+        },
+        {
+          "text": "a",
+          "label": "O",
+          "confidence": 0.999438464641571
+        },
+        {
+          "text": "car",
+          "label": "B-ORG",
+          "confidence": 0.6073286533355713
+        }
+      ],
+      "overall_confidence": 0.8987866044044495,
+      "created_at": "2026-06-23T06:43:26.832014Z",
+      "_id": "366a22e0-2d42-41f2-a717-d6b0f3e4ae65"
+    }
+  ]
+}
