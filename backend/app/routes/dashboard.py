@@ -20,7 +20,7 @@ async def get_dashboard_stats(current_user: Dict[str, Any] = Depends(get_current
     
     # Retrieve all history items to aggregate entity counts
     cursor = history_col.find({"user_id": username})
-    history_items = await cursor.to_list()
+    history_items = await cursor.to_list(length=None)
     
     org_counter = Counter()
     event_counter = Counter()
@@ -131,7 +131,7 @@ async def get_dashboard_stats(current_user: Dict[str, Any] = Depends(get_current
 async def get_recent_history(current_user: Dict[str, Any] = Depends(get_current_user)):
     history_col = get_collection("history")
     cursor = history_col.find({"user_id": current_user["username"]}).sort("created_at", -1).limit(5)
-    items = await cursor.to_list()
+    items = await cursor.to_list(length=None)
     
     for item in items:
         item["id"] = str(item.pop("_id"))
